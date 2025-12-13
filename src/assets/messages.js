@@ -13,7 +13,7 @@ const messages = {
   title: "Software Engineer & Architect",
   links: {
     linkedIn: "https://linkedin.com/in/jake-stubbs-software",
-    gitHub: "https://github.com/JakeStubbs4/"
+    gitHub: "https://github.com/jstubbs/"
   },
   aboutMe: {
     intro: "I am a software engineer with professional experience spanning the financial services, telecommunications, and cybersecurity industries. With a multifaceted skill set in software development and architecture, I am passionate about solving problems relating to...",
