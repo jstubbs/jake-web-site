@@ -4,6 +4,7 @@ export const EDUCATION_TYPES_ENUM = {
 };
 
 const LOCATION_TYPES_ENUM = {
+  HYBRID: "Hybrid",
   REMOTE: "Remote",
   OFFICE: "In Office",
 }
@@ -56,14 +57,28 @@ const messages = {
   },
   experience: [
     {
+      organizationName: "D-Wave Systems",
+      location: "Vancouver, BC, Canada",
+      locationType: LOCATION_TYPES_ENUM.HYBRID,
+      roles: [
+        {
+          title: "Senior Software Developer",
+          start: "1/2026",
+          end: "Present",
+          descriptionPoints: [
+          ],
+        },
+      ]
+    },
+    {
       organizationName: "Symcor Inc.",
       location: "Toronto, ON, Canada",
       locationType: LOCATION_TYPES_ENUM.REMOTE,
       roles: [
         {
-          title: "Senior Software Architect | Open Banking & Payments Fraud",
+          title: "Software Architect | Open Banking & Payments Fraud",
           start: "6/2024",
-          end: "Present",
+          end: "12/2025",
           descriptionPoints: [
             "As the lead software architect, I designed open banking and payments fraud products to serve hundreds of real-time API requests per second and analyze millions of payments per day using machine learning.",
             "Achieved a 20% reduction in annual cloud infrastructure costs.",
