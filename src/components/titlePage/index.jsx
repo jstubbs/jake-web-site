@@ -17,7 +17,7 @@ function TitlePage() {
   
   const autoScroll = () => {
     const headerSize = document.getElementById('header-transform').getBoundingClientRect().bottom - document.getElementById('header-transform').getBoundingClientRect().top;
-    const contentTop = document.getElementById('down-arrow').getBoundingClientRect().bottom - headerSize - 15;
+    const contentTop = document.getElementById('down-arrow').getBoundingClientRect().bottom - headerSize - 7.5;
     scrollY(contentTop);
   }
 

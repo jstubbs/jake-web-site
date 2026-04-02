@@ -11,7 +11,7 @@ const LOCATION_TYPES_ENUM = {
 
 const messages = {
   fullName: "Jake Stubbs",
-  title: "Software Engineer & Architect",
+  title: "Software Developer",
   links: {
     linkedIn: "https://linkedin.com/in/jake-stubbs-software",
     gitHub: "https://github.com/jstubbs/"
