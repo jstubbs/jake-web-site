@@ -7,7 +7,7 @@ import ContentGrid from 'components/contentGrid';
 
 function ExperienceCard() {
   return (
-		<Grid container xs={8} direction="column" className="content-card" justifyContent="flex-end">
+		<Grid container direction="column" className="content-card">
 			<ContentHeader item icon={<WorkIcon />} header={{ text: "Experience", size: "medium" }} />
 			<ContentGrid item>
 				{messages.experience.map(item => {

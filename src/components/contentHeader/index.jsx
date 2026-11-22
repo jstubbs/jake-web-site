@@ -4,6 +4,7 @@ import { Grid } from "@mui/material";
 
 const HeaderContainer = styled(Grid)`
   margin-top: 2vh;
+  margin-bottom: 12px;
 `
 
 function ContentHeader({icon, header}) {

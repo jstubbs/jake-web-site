@@ -1,19 +1,70 @@
 @import 'src/assets/variables.module.scss';
 
 .app-header {
-    background-color: rgba(map-get($theme-colours, "primaryColourR"), map-get($theme-colours, "primaryColourG"), map-get($theme-colours, "primaryColourB"), 0);
-    display: flex;
-    padding: 0 0 0 5%;
-    color: rgba(map-get($theme-colours, "textColourRGB"), map-get($theme-colours, "textColourRGB"), map-get($theme-colours, "textColourRGB"), 0);
-    border-bottom: 2px solid rgba(map-get($theme-colours, "accentColourR"), map-get($theme-colours, "accentColourG"), map-get($theme-colours, "accentColourB"), 0);
-    position: fixed;
-    top: 0;
-    width: 95%;
-    z-index: 10;
+  align-items: center;
+  backdrop-filter: blur(12px);
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  display: flex;
+  justify-content: space-between;
+  left: clamp(6px, 1.5vw, 20px);
+  min-height: 96px;
+  padding: 0 clamp(24px, 5vw, 72px);
+  position: fixed;
+  right: clamp(6px, 1.5vw, 20px);
+  top: 0;
+  z-index: 10;
+  border-radius: 0 0 12px 12px;
 }
 
 .app-title {
-    margin-left: 3vh;
-    font-size: 3vh;
-    z-index: 10;
+  gap: 12px;
+  opacity: var(--header-content-opacity, 0);
+  z-index: 10;
+
+  a {
+    align-items: center;
+    color: map-get($theme-colours, "textColour");
+    display: flex;
+    font-size: clamp(1.6rem, 3.5vh, 2.25rem);
+    font-weight: 650;
+    gap: 12px;
+    letter-spacing: .01em;
+    text-decoration: none;
+  }
+}
+
+.app-header .icons-box {
+  opacity: var(--header-content-opacity, 0);
+}
+
+.app-title-divider,
+.app-title-role {
+  color: map-get($theme-colours, "accentColour");
+}
+
+.app-title-divider {
+  opacity: .7;
+}
+
+.app-title-role {
+  font-size: .85em;
+  font-weight: 400;
+}
+
+@media (max-width: 560px) {
+  .app-header {
+    min-height: 76px;
+    left: 6px;
+    padding: 0 18px;
+    right: 6px;
+  }
+
+  .app-title-role {
+    display: none;
+  }
+
+  .app-title a {
+    font-size: clamp(1.4rem, 5.4vw, 1.8rem);
+  }
 }

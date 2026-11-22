@@ -66,6 +66,9 @@ const messages = {
           start: "1/2026",
           end: "Present",
           descriptionPoints: [
+            "Developed distributed back-end services in Python and Go, hosted on EKS (AWS), for D-Wave\'s \“Leap\" cloud platform. Leap accepts client problems and orchestrates their execution on on-premises quantum computers.",
+            "Completed the integration of an acquired companies’ quantum simulator with the Leap cloud platform.",
+            "Migrated the local development environment from disparate containers managed by Docker Compose to a local Kubernetes cluster with continuous development orchestrated by Skaffold and Helm."
           ],
         },
       ]
@@ -80,12 +83,12 @@ const messages = {
           start: "6/2024",
           end: "12/2025",
           descriptionPoints: [
-            "As the lead software architect, I designed open banking and payments fraud products to serve hundreds of real-time API requests per second and analyze millions of payments per day using machine learning.",
-            "Achieved a 20% reduction in annual cloud infrastructure costs.",
-            "Increased real-time API request capacity by 10X while enhancing workload operability.",
-            "Mentored and provided technical direction to a division of over 25 Software Engineers.",
-            "Designed zero-trust security architectures for Kubernetes and serverless runtimes hosted on Cloudflare, Microsoft Azure, and on-premises environments.",
-            "Designed batch, stream, and real-time processing systems for data science and machine learning applications.",
+            "Lead software architect responsible for the design, implementation, and operations of multiple products serving hundreds of real-time API requests per second and analyzing millions of payments per day.",
+            "Achieved a 20% reduction in cost of cloud infrastructure through architectural optimizations.",
+            "Increased API request capacity by 10X while enhancing workload reliability and operability.",
+            "Provided mentorship and technical leadership to a division of 25+ Software Engineers.",
+            "Designed and implemented reliable and scalable zero-trust security architectures for Kubernetes and serverless runtimes hosted on Cloudflare, Microsoft Azure, and on-premises environments.",
+            "Designed and implemented batch, streaming, and real-time processing systems for data science and machine learning applications with Python, PySpark, and Azure Databricks.",
           ],
         },
         {

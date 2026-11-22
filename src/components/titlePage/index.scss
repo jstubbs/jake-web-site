@@ -1,6 +1,8 @@
 @import 'src/assets/variables.module.scss';
 
 .title-page-box {
+  height: 100vh;
+  height: 100svh;
   overflow: hidden;
   left: 0;
   top: 0;
@@ -11,13 +13,23 @@
 }
 
 .title-page-title {
-  font-size: 7.5vh;
+  font-size: clamp(2rem, 7.5vh, 5rem);
   position: absolute;
   top: 50%;
   left: 50%;
   color: map-get($theme-colours, "accentColour");
   margin-right: -50%;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 700px) {
+  .title-page-title {
+    font-size: clamp(1.35rem, 6vw, 2rem);
+  }
+
+  .title-page-title .MuiStack-root {
+    gap: 14px;
+  }
 }
 
 @keyframes pulse {

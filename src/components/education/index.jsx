@@ -37,7 +37,7 @@ const Degree = ({experience}) => {
         spacing={1}
       >
         <Grid item>
-          <h4>Specialization:</h4>
+          <h4 className="specialization-label">Specialization:</h4>
         </Grid>
         <Grid item>
           <h4 className="specialization-content">{experience.specialization}</h4>
@@ -68,10 +68,10 @@ const Certification = ({experience}) => {
         spacing={1}
       >
         <Grid item>
-          <h4>Verified Credential ID:</h4>
+          <h4 className="specialization-label">Verified Credential ID:</h4>
         </Grid>
         <Grid item>
-          <h4><a href={experience.link} target="_blank" rel="noopener noreferrer">{experience.credentialId}</a></h4>
+          <h4 className="specialization-content"><a href={experience.link} target="_blank" rel="noopener noreferrer">{experience.credentialId}</a></h4>
         </Grid>
       </ContentContainer>
       <ContentContainer
@@ -82,16 +82,10 @@ const Certification = ({experience}) => {
         spacing={1}
       >
         <Grid item>
-          <h4>Issued:</h4>
+          <h4 className="specialization-label">Issued:</h4>
         </Grid>
         <Grid item>
           <h4 className="specialization-content">{experience.issued}</h4>
-        </Grid>
-        <Grid item>
-          <h4>| Expires:</h4>
-        </Grid>
-        <Grid item>
-          <h4 className="specialization-content">{experience.expires}</h4>
         </Grid>
       </ContentContainer>
     </Grid>

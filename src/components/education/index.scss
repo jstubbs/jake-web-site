@@ -4,14 +4,38 @@
   color: map-get($theme-colours, "accentColour");
   align-items: center;
   display: flex;
+  gap: 12px;
 }
 
 .education-timeline {
-  position: relative;
-  text-align: end;
-  flex: 1;
+  color: rgba(map-get($theme-colours, "textColour"), .72);
+  flex: 0 0 auto;
+  margin-left: auto;
+  text-align: right;
 }
 
 .specialization-content {
+  color: map-get($theme-colours, "textColour");
+
+  a:link,
+  a:visited {
+    color: inherit;
+  }
+}
+
+.specialization-label {
   color: map-get($theme-colours, "accentColour");
+}
+
+@media (max-width: 640px) {
+  .education-title {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .education-timeline {
+    margin-left: 0;
+    text-align: left;
+  }
 }
