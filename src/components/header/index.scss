@@ -52,6 +52,16 @@
   font-weight: 400;
 }
 
+@media (max-width: 1329px) {
+  .app-title {
+    display: none;
+  }
+
+  .app-header .icons-box {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 560px) {
   .app-header {
     min-height: 76px;
